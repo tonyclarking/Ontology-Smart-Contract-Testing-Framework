@@ -1,4 +1,6 @@
 {
+   "hash":"0x18fdefe73b023e5f6574e3fe26407198c07eca9f",
+   "entrypoint":"Main",
    "functions":[
       {
          "name":"Main",
@@ -15,26 +17,6 @@
          "returntype":""
       },
       {
-         "name":"Name",
-         "parameters":[
-            {
-               "name":"",
-               "type":""
-            }
-         ],
-         "returntype":""
-      },
-      {
-         "name":"TotalSupply",
-         "parameters":[
-            {
-               "name":"",
-               "type":""
-            }
-         ],
-         "returntype":""
-      },
-      {
          "name":"Init",
          "parameters":[
             {
@@ -42,7 +24,17 @@
                "type":""
             }
          ],
-         "returntype":""
+         "returntype":"Boolean"
+      },
+      {
+         "name":"Name",
+         "parameters":[
+            {
+               "name":"",
+               "type":""
+            }
+         ],
+         "returntype":"String"
       },
       {
          "name":"Symbol",
@@ -52,85 +44,17 @@
                "type":""
             }
          ],
-         "returntype":""
+         "returntype":"String"
       },
       {
-         "name":"Transfer",
+         "name":"TotalSupply",
          "parameters":[
             {
-               "name":"from_acct",
-               "type":""
-            },
-            {
-               "name":"to_acct",
-               "type":""
-            },
-            {
-               "name":"amount",
+               "name":"",
                "type":""
             }
          ],
-         "returntype":""
-      },
-      {
-         "name":"TransferMulti",
-         "parameters":[
-            {
-               "name":"args",
-               "type":""
-            }
-         ],
-         "returntype":""
-      },
-      {
-         "name":"Approve",
-         "parameters":[
-            {
-               "name":"owner",
-               "type":""
-            },
-            {
-               "name":"spender",
-               "type":""
-            },
-            {
-               "name":"amount",
-               "type":""
-            }
-         ],
-         "returntype":""
-      },
-      {
-         "name":"TransferFrom",
-         "parameters":[
-            {
-               "name":"spender",
-               "type":""
-            },
-            {
-               "name":"from_acct",
-               "type":""
-            },
-            {
-               "name":"to_acct",
-               "type":""
-            },
-            {
-               "name":"amount",
-               "type":""
-            }
-         ],
-         "returntype":""
-      },
-      {
-         "name":"BalanceOf",
-         "parameters":[
-            {
-               "name":"account",
-               "type":""
-            }
-         ],
-         "returntype":""
+         "returntype":"Integer"
       },
       {
          "name":"Decimal",
@@ -140,21 +64,104 @@
                "type":""
             }
          ],
+         "returntype":"Integer"
+      },
+
+      {
+         "name":"Transfer",
+         "parameters":[
+            {
+               "name":"from_acct",
+               "type":"ByteArray"
+            },
+            {
+               "name":"to_acct",
+               "type":"ByteArray"
+            },
+            {
+               "name":"amount",
+               "type":"Integer"
+            }
+         ],
          "returntype":""
       },
+      {
+         "name":"TransferMulti",
+         "parameters":[
+            {
+               "name":"args",
+               "type":"Array"
+            }
+         ],
+         "returntype":"Boolean"
+      },
+      {
+         "name":"Approve",
+         "parameters":[
+            {
+               "name":"owner",
+               "type":"ByteArray"
+            },
+            {
+               "name":"spender",
+               "type":"ByteArray"
+            },
+            {
+               "name":"amount",
+               "type":"Integer"
+            }
+         ],
+         "returntype":""
+      },
+      {
+         "name":"TransferFrom",
+         "parameters":[
+            {
+               "name":"spender",
+               "type":"ByteArray"
+            },
+            {
+               "name":"from_acct",
+               "type":"ByteArray"
+            },
+            {
+               "name":"to_acct",
+               "type":"ByteArray"
+            },
+            {
+               "name":"amount",
+               "type":"Integer"
+            }
+         ],
+         "returntype":""
+      },
+      {
+         "name":"BalanceOf",
+         "parameters":[
+            {
+               "name":"account",
+               "type":"ByteArray"
+            }
+         ],
+         "returntype":"Integer"
+      },
+
       {
          "name":"Allowance",
          "parameters":[
             {
                "name":"owner",
-               "type":""
+               "type":"ByteArray"
             },
             {
                "name":"spender",
-               "type":""
+               "type":"ByteArray"
             }
          ],
-         "returntype":""
+         "returntype":"Integer"
       }
+   ],
+   "events":[
+
    ]
 }

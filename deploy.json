@@ -1,8 +1,8 @@
 {
   "rpc_address": "http://127.0.0.1:20336",
-  "code": "./contract/Wontology/Wontology.avm",
+  "code": "./contract/OEP4SamplePY/OEP4Sample.avm",
   "need_storage": "true",
-  "name": "ope4TokenTemplate",
+  "name": "OEP4Sample",
   "code_version": "codeVersion1",
   "author": "authorTest",
   "email": "emailTest",
@@ -12,5 +12,5 @@
   "wallet_file_path":"./deploy_wallet.json",
   "gas_limit": 21000000,
   "gas_price": 0,
-  "save_file":"./contract/Wontology/deploy.csv"
+  "save_file":"./contract/OEP4SamplePY/deploy.csv"
 }

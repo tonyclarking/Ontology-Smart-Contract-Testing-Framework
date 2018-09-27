@@ -5,7 +5,7 @@
   "wallet_file_path": "./invoke_wallet.json",
   "gas_limit": 20000,
   "gas_price": 0,
-  "abi_path": "./contract/OEP4SamplePY/OEP4Sample_abi.json",
+  "abi_path": "./contract/OEP4SamplePY/abi.json",
   "save_file": "./contract/OEP4SamplePY/invoke.csv",
   "function": {
     "deploy": {
