@@ -1,0 +1,170 @@
+{
+  "rpc_address": "http://127.0.0.1:20336",
+  "payer_address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+  "payer_password": "xinhao",
+  "wallet_file_path": "./invoke_wallet.json",
+  "gas_limit": 20000,
+  "gas_price": 0,
+  "abi_path": "./contract/OEP4SamplePY/OEP4Sample_abi.json",
+  "save_file": "./contract/OEP4SamplePY/invoke.csv",
+  "function": {
+    "deploy": {
+      "function_name": "Init",
+      "function_param": {
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+
+    "name": {
+      "function_name": "Name",
+      "function_param": {
+      },
+      "pre_exec": true
+    },
+    "symbol": {
+      "function_name": "Symbol",
+      "function_param": {
+      },
+      "pre_exec": true
+    },
+    "decimals": {
+      "function_name": "Decimal",
+      "function_param": {
+      },
+      "pre_exec": true
+    },
+    "totalSupply": {
+      "function_name": "TotalSupply",
+      "function_param": {
+      },
+      "pre_exec": true
+    },
+    "balanceOf": {
+      "function_name": "BalanceOf",
+      "function_param": {
+        "address": "ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh"
+      },
+      "pre_exec": true
+    },
+
+    "approve": {
+      "function_name": "Approve",
+      "function_param": {
+        "owner": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "spender": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+        "value": 2
+      },
+      "signers":
+        {
+        "m": 1,
+        "signer":
+          {
+            "walletpath": "invoke_wallet.json",
+            "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+            "password": "xinhao"
+          }
+      },
+      "pre_exec": false
+    },
+
+    "allowance": {
+      "function_name": "Allowance",
+      "function_param": {
+        "owner": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "spender": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm"
+      },
+      "pre_exec": true
+    },
+
+    "transferfrom": {
+      "function_name": "TransferFrom",
+      "function_param": {
+        "spender": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+        "fromAddr": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "toAddr": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+        "value": 1
+      },
+      "signers":
+        {
+        "m": 1,
+        "signer":
+          {
+            "walletpath": "invoke_wallet.json",
+            "address": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+            "password": "xinhao"
+          }
+      },
+      "pre_exec": false
+    },
+    "transfer": {
+      "function_name": "Transfer",
+      "function_param": {
+        "fromAddr": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "toAddr": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+        "value": 1
+      },
+      "signers":
+        {
+        "m": 1,
+        "signer":
+          {
+            "walletpath": "invoke_wallet.json",
+            "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+            "password": "xinhao"
+          }
+      },
+      "pre_exec": false
+    },
+    "transferMulti":{
+      "function_name": "TransferMulti",
+      "function_param":
+      {
+        "Array":[
+          {
+            "fromAddr": "ByteArray:ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6",
+            "toAddr": "ByteArray:ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh",
+            "value": 1
+          },
+          {
+            "fromAddr": "ByteArray:AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+            "toAddr": "ByteArray:ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh",
+            "value": 1
+          }
+        ]
+      },
+
+      "signers":[
+           {
+              "m": 1,
+              "signer": {
+                "walletpath": "./invoke_wallet.json",
+                "address": "ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6",
+                "password": "xinhao"
+              }
+           },
+          {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    }
+
+  }
+}

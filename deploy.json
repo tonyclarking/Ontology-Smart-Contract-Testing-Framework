@@ -1,0 +1,16 @@
+{
+  "rpc_address": "http://127.0.0.1:20336",
+  "code": "./contract/Wontology/Wontology.avm",
+  "need_storage": "true",
+  "name": "ope4TokenTemplate",
+  "code_version": "codeVersion1",
+  "author": "authorTest",
+  "email": "emailTest",
+  "desp": "contractDescription",
+  "payer_address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+  "payer_password":"xinhao",
+  "wallet_file_path":"./deploy_wallet.json",
+  "gas_limit": 21000000,
+  "gas_price": 0,
+  "save_file":"./contract/Wontology/deploy.csv"
+}

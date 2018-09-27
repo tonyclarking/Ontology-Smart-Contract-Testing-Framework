@@ -1,0 +1,3 @@
+No,need_storage,name,code_version,author,email,desp,payer_address,gas_limit,gas_price,result
+1,true,QJToken,codeVersion1,authorTest,emailTest,contractDescription,AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p,20600000,0,success
+3,true,QJToken,codeVersion1,authorTest,emailTest,contractDescription,AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p,20600000,0,success

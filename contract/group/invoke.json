@@ -1,0 +1,63 @@
+{
+  "rpc_address": "http://127.0.0.1:20336",
+  "payer_address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+  "payer_password": "xinhao",
+  "wallet_file_path": "./deploy_wallet.json",
+  "gas_limit": 20000,
+  "gas_price": 0,
+  "abi_path": "./contract/group/group_abi.json",
+  "save_file": "./contract/group/invoke.csv",
+  "function": {
+    "SetContractHash": {
+      "function_name": "SetContractHash",
+      "function_param": {
+        "key": "YouLe",
+        "hash": "19420078e44ea80b664b9babbd0d9ce81a709a74"
+      },
+      "signers":{
+        "m": 1,
+        "signer":{
+          "walletpath": "./invoke_wallet.json",
+          "address": "AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR",
+          "password": "xinhao"
+        }
+      },
+      "pre_exec": false
+    },
+    "GetContractHash": {
+      "function_name": "GetContractHash",
+      "function_param": {
+        "key": "YouLe"
+      },
+      "pre_exec": true
+    },
+    "GroupTransfer":{
+      "function_name": "GroupTransfer",
+      "function_param":{
+        "from":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "to":"AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR",
+        "Array": [
+          {
+            "key": "String:YouLe",
+            "value": 1
+          },
+          {
+            "key": "String:QuanJia",
+            "value": 1
+          }
+        ]
+      },
+      "signers":[
+           {
+              "m": 1,
+              "signer": {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+           }
+      ],
+      "pre_exec": false
+    }
+  }
+}
